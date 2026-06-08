@@ -10,7 +10,7 @@ function App() {
           name === 'a' && 'text-blue-500',
         )}
       >
-        template
+        templates
       </p>
     </>
   );
