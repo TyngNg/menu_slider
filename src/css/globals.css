@@ -2,4 +2,36 @@
 
 body {
   margin: 0;
+  font-size: 1vw;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #0d0628;
+  font-family: Fahkwang, sans-serif;
+  background-color: #e9c6dd;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 2000px;
+  margin-inline: auto;
+  padding: 2.06em;
+}
+
+.trigger_line {
+  width: 3em;
+  height: 0.2em;
+  margin-block: 0.3em;
+  background-color: #0d0628;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-inline: 4.9em;
+    padding-block: 22px;
+  }
+
+  .trigger_line {
+    font-size: 8px;
+  }
 }

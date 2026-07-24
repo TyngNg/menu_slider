@@ -1,18 +1,17 @@
-import { cn } from './utils/cn';
+import { useState } from 'react';
+import Content from './components/Content';
+import CustomCursor from './components/CustomCursor';
+import TopNOverLay from './components/TopNOverLay';
 
 function App() {
-  const name = 'a';
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <>
-      <p
-        className={cn(
-          'text-red-500 font-bold text-2xl',
-          name === 'a' && 'text-blue-500',
-        )}
-      >
-        templates
-      </p>
-    </>
+    <main className="w-full min-h-screen">
+      <CustomCursor isOpen={isOpen} />
+      <TopNOverLay isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Content />
+    </main>
   );
 }
 
